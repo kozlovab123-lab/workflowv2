@@ -54,7 +54,7 @@ jobs:
         run: python download_translations.py --output ../../src/frontend/src/locales/
 
       - name: Close stale translation PRs
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
